@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.sql.DataSource;
 
@@ -21,6 +22,10 @@ public class Config {
         dataSource.setPassword("12345678");
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         return dataSource;
+    }
+    @Bean
+    public BCryptPasswordEncoder getPasswordEncoder(){
+        return new BCryptPasswordEncoder(8);
     }
 
 

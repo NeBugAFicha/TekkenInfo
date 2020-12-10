@@ -2,6 +2,7 @@ package com.TekkenInfo.Controller;
 
 import com.TekkenInfo.Domain.Char;
 import com.TekkenInfo.Domain.Tier;
+import com.TekkenInfo.Domain.User;
 import com.TekkenInfo.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -54,6 +55,7 @@ public class MainController {
 
     }
 
+
     @GetMapping("/update/{charName}")
     public String updateCharacter(
             @PathVariable("charName") String charName,
@@ -72,6 +74,27 @@ public class MainController {
             Model model) {
        userService.updateChar(new Char(name,style,Tier.valueOf(lvl)),charName);
        return "redirect:/main";
+    }
+
+    @GetMapping("registration")
+    public String registration(){
+        return "registration";
+    }
+
+    @PostMapping("registration")
+    public String addUser(
+            User user,
+            Model model
+    ){
+        com.TekkenInfo.Domain.User userFromDb = userService.findByUsername(user.getUsername());
+        if(userFromDb!=null) {
+            model.addAttribute("message","User already exists");
+            return "registration";
+        }else{
+            user.setActive(true);
+            userService.addUser(user);
+            return "redirect:/login";
+        }
     }
 
 
