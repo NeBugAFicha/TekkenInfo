@@ -1122,75 +1122,79 @@
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
     <table id="282" parent="2" name="characters"/>
-    <table id="283" parent="2" name="user_role"/>
-    <table id="284" parent="2" name="usr"/>
-    <column id="285" parent="282" name="name">
+    <table id="283" parent="2" name="hibernate_sequence"/>
+    <table id="284" parent="2" name="user_role"/>
+    <table id="285" parent="2" name="usr"/>
+    <column id="286" parent="282" name="name">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="282" name="style">
+    <column id="287" parent="282" name="style">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="282" name="tier">
+    <column id="288" parent="282" name="tier">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="283" name="user_id">
+    <column id="289" parent="283" name="next_val">
       <Position>1</Position>
-      <DataType>int|0s</DataType>
+      <DataType>bigint|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="284" name="user_id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="283" name="roles">
+    <column id="291" parent="284" name="roles">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="284" name="id">
-      <Position>1</Position>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="291" parent="284" name="username">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="292" parent="284" name="password">
-      <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="293" parent="284" name="active">
-      <Position>4</Position>
-      <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="294" parent="284" name="usr_id_uindex">
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
+    <index id="292" parent="284" name="FKfpm8swft53ulq2hl11yplpr5">
+      <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="295" parent="284" name="PRIMARY">
+    <foreign-key id="293" parent="284" name="FKfpm8swft53ulq2hl11yplpr5">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>TekkenDB</RefSchemaName>
+      <RefTableName>usr</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="294" parent="285" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="295" parent="285" name="active">
+      <Position>2</Position>
+      <DataType>bit(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="296" parent="285" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="297" parent="285" name="username">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="298" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
-    </key>
-    <key id="296" parent="284" name="usr_id_uindex">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>usr_id_uindex</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

@@ -5,22 +5,25 @@ import com.TekkenInfo.Domain.Role;
 import com.TekkenInfo.Domain.User;
 import com.TekkenInfo.Mapper.CharMapper;
 
+import com.TekkenInfo.Repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+
 
 import java.sql.ResultSet;
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserDetailsService, UserService{
     @Autowired
     public JdbcTemplate jdbcTemplate;
-
-    @Autowired
-    public BCryptPasswordEncoder passwordEncoder;
 
     @Override
     public void addChar(Char character){
@@ -51,21 +54,12 @@ public class UserServiceImpl implements UserService{
         jdbcTemplate.update(sql,character.getName(),character.getFightingStyle(),character.getTierLvl().toString(),oldName);
     }
 
-    @Override
-    public User findByUsername(String username){
-        String sql = "Select * from usr where username = ?";
-        if(jdbcTemplate.queryForRowSet(sql,username).next()) return new User();
-        else return null;
-    }
+    @Autowired
+    private UserRepo userRepo;
 
     @Override
-    public void addUser(User user){
-        jdbcTemplate.update("ALTER TABLE usr AUTO_INCREMENT=1");
-        String sql = "INSERT INTO usr (username,password,active) values (?,?,?)";
-        jdbcTemplate.update(sql,user.getUsername(),passwordEncoder.encode(user.getPassword()),user.isActive());
-        SqlRowSet resultSet = jdbcTemplate.queryForRowSet("select id from usr where username=?",user.getUsername());
-        if(resultSet.next())
-        jdbcTemplate.update("insert into user_role (user_id, roles) values (?,?)",resultSet.getInt(1), Role.USER.toString());
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return userRepo.findByUsername(username);
     }
 
 

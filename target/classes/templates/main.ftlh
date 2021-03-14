@@ -8,7 +8,12 @@
         <form method="post">
             <input type="text" name="name" placeholder="Character Name" />
             <input type="text" name="style" placeholder="Fighting Style" />
-            <input type="text" name="lvl" placeholder="Tier LVL" />
+            <select name="lvl">
+                <#list tierLvls as tierLvl>
+                    <option value=${tierLvl}>${tierLvl}</option>
+                </#list>
+            </select>
+            <input type="hidden" name="_csrf" value="${_csrf.token}" />
             <button type="submit">Add a character</button>
         </form>
         <div>Tekken Characters:</div> </br>

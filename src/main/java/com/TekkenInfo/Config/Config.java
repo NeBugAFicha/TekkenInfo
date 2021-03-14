@@ -25,7 +25,7 @@ public class Config {
     }
     @Bean
     public BCryptPasswordEncoder getPasswordEncoder(){
-        return new BCryptPasswordEncoder(8);
+        return new BCryptPasswordEncoder(10);
     }
 
 

@@ -1,9 +1,11 @@
 package com.TekkenInfo.Controller;
 
 import com.TekkenInfo.Domain.Char;
+import com.TekkenInfo.Domain.Role;
 import com.TekkenInfo.Domain.Tier;
 import com.TekkenInfo.Domain.User;
-import com.TekkenInfo.Service.UserService;
+import com.TekkenInfo.Repos.UserRepo;
+import com.TekkenInfo.Service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,12 +14,18 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 @Controller
 public class MainController {
     @Autowired
-    public UserService userService;
+    public UserServiceImpl userService;
+    private List<String> tierLvls = new ArrayList<String>(Arrays.asList("S", "A", "B", "C", "D", "EDDY"));
+    @Autowired
+    private UserRepo userRepo;
 
     @GetMapping
     public String announce(
@@ -30,6 +38,7 @@ public class MainController {
     @GetMapping("main")
     public String hello(Model model) {
         Iterable<Char> allChars = userService.findAll();
+        model.addAttribute("tierLvls",tierLvls);
         model.addAttribute("chars",allChars);
         return "main";
     }
@@ -40,7 +49,7 @@ public class MainController {
             @RequestParam String style,
             @RequestParam String lvl,
             Model model) {
-        userService.addChar(new Char(name,style, Tier.valueOf(lvl)));
+        userService.addChar(new Char(name,style,Tier.valueOf(lvl)));
         Iterable<Char> allChars = userService.findAll();
         model.addAttribute("chars",allChars);
         return "redirect:/main";
@@ -61,6 +70,7 @@ public class MainController {
             @PathVariable("charName") String charName,
             Model model){
         Char character = userService.findByName(charName);
+        model.addAttribute("tierLvls",tierLvls);
         model.addAttribute("char",character);
         return "update";
     }
@@ -76,25 +86,25 @@ public class MainController {
        return "redirect:/main";
     }
 
-    @GetMapping("registration")
-    public String registration(){
+    @GetMapping("/registration")
+    public String registration() {
         return "registration";
     }
 
-    @PostMapping("registration")
-    public String addUser(
-            User user,
-            Model model
-    ){
-        com.TekkenInfo.Domain.User userFromDb = userService.findByUsername(user.getUsername());
-        if(userFromDb!=null) {
-            model.addAttribute("message","User already exists");
+    @PostMapping("/registration")
+    public String addUser(User user, Model model) {
+        User userFromDb = userRepo.findByUsername(user.getUsername());
+
+        if (userFromDb != null) {
+            model.addAttribute("message", "User exists!");
             return "registration";
-        }else{
-            user.setActive(true);
-            userService.addUser(user);
-            return "redirect:/login";
         }
+
+        user.setActive(true);
+        user.setRoles(Collections.singleton(Role.USER));
+        userRepo.save(user);
+
+        return "redirect:/login";
     }
 
 

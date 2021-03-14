@@ -11,7 +11,4 @@ public interface UserService {
     void deleteChar(String charName);
     Char findByName(String charName);
     void updateChar(Char character,String oldName);
-    void addUser(User user);
-    User findByUsername(String username);
-
 }
