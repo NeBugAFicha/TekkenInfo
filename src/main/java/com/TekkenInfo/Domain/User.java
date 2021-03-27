@@ -1,10 +1,12 @@
 package com.TekkenInfo.Domain;
 
 
+import org.hibernate.validator.constraints.Length;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 import java.util.Set;
 
@@ -14,7 +16,11 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @NotBlank(message="Пожалуйста, введите имя пользователя")
+    @Length(max=30, message = "Слишком длинное имя пользователя, максимальное число символов 30")
     private String username;
+    @NotBlank(message="Пожалуйста, введите пароль")
+    @Length(max=30, message = "Слишком длинный пароль, максимальное число символов 30")
     private String password;
     private boolean active;
 

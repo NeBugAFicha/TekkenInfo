@@ -1,20 +1,5 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Fighting room</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-    <body>
-        <form method="post">
-            <input type="text" name="name" value="${char.getName()}" />
-            <input type="text" name="style" value="${char.getFightingStyle()}" />
-            <select name="lvl">
-                <#list tierLvls as tierLvl>
-                    <option value=${tierLvl}>${tierLvl}</option>
-                </#list>
-            </select>
-            <input type="hidden" name="_csrf" value="${_csrf.token}" />
-            <button type="submit">Change</button>
-        </form>
-    </body>
-</html>
+<#import "parts/common.ftlh" as c>
+<#import "parts/characterEdit.ftlh" as chr>
+<@c.page>
+<@chr.page/>
+</@c.page>

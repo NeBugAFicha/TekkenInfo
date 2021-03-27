@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.sql.DataSource;
 
@@ -24,7 +25,7 @@ public class Config {
         return dataSource;
     }
     @Bean
-    public BCryptPasswordEncoder getPasswordEncoder(){
+    public PasswordEncoder getPasswordEncoder(){
         return new BCryptPasswordEncoder(10);
     }
 

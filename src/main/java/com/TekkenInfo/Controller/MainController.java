@@ -7,17 +7,23 @@ import com.TekkenInfo.Domain.User;
 import com.TekkenInfo.Repos.UserRepo;
 import com.TekkenInfo.Service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import javax.validation.Valid;
+import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+import static com.TekkenInfo.Controller.ControllerUtils.getErrors;
 
 @Controller
 public class MainController {
@@ -26,6 +32,8 @@ public class MainController {
     private List<String> tierLvls = new ArrayList<String>(Arrays.asList("S", "A", "B", "C", "D", "EDDY"));
     @Autowired
     private UserRepo userRepo;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @GetMapping
     public String announce(
@@ -45,15 +53,20 @@ public class MainController {
 
     @PostMapping("main")
     public String addCharacter(
-            @RequestParam String name,
-            @RequestParam String style,
-            @RequestParam String lvl,
+            @Valid Char character,
+            BindingResult bindingResult,
             Model model) {
-        userService.addChar(new Char(name,style,Tier.valueOf(lvl)));
+        if(bindingResult.hasErrors()){
+            Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
+            model.mergeAttributes(errorsMap);
+        } else userService.addChar(character);
         Iterable<Char> allChars = userService.findAll();
+        model.addAttribute("tierLvls",tierLvls);
         model.addAttribute("chars",allChars);
-        return "redirect:/main";
+        return "main";
     }
+
+
 
     @GetMapping("/delete/{charName}")
     public String deleteCharacter(
@@ -77,12 +90,16 @@ public class MainController {
 
     @PostMapping("/update/{charName}")
     public String addCharacter(
-            @RequestParam String name,
-            @RequestParam String style,
-            @RequestParam String lvl,
-            @PathVariable("charName") String charName,
-            Model model) {
-       userService.updateChar(new Char(name,style,Tier.valueOf(lvl)),charName);
+            @Valid Char character,
+            BindingResult bindingResult,
+            Model model,
+            @PathVariable String charName) {
+        if(bindingResult.hasErrors()){
+            Map<String, String> errorsMap = getErrors(bindingResult);
+            model.mergeAttributes(errorsMap);
+            model.addAttribute("tierLvls",tierLvls);
+            return "update";
+        } else userService.updateChar(character,charName);
        return "redirect:/main";
     }
 
@@ -92,16 +109,26 @@ public class MainController {
     }
 
     @PostMapping("/registration")
-    public String addUser(User user, Model model) {
+    public String addUser(
+            @Valid User user,
+            BindingResult bindingResult,
+            Model model) {
         User userFromDb = userRepo.findByUsername(user.getUsername());
+        if(bindingResult.hasErrors()){
+            Map<String, String> errorsMap = getErrors(bindingResult);
+            model.mergeAttributes(errorsMap);
+            return "registration";
+        }
 
         if (userFromDb != null) {
-            model.addAttribute("message", "User exists!");
+            model.addAttribute("message", "Пользователь уже существует!");
             return "registration";
         }
 
         user.setActive(true);
         user.setRoles(Collections.singleton(Role.USER));
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
         userRepo.save(user);
 
         return "redirect:/login";

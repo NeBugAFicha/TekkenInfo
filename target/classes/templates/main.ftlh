@@ -1,21 +1,7 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Fighting room</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-    <body>
-        <form method="post">
-            <input type="text" name="name" placeholder="Character Name" />
-            <input type="text" name="style" placeholder="Fighting Style" />
-            <select name="lvl">
-                <#list tierLvls as tierLvl>
-                    <option value=${tierLvl}>${tierLvl}</option>
-                </#list>
-            </select>
-            <input type="hidden" name="_csrf" value="${_csrf.token}" />
-            <button type="submit">Add a character</button>
-        </form>
+<#import "parts/common.ftlh" as c>
+<#import "parts/characterEdit.ftlh" as chr>
+<@c.page>
+        <@chr.page/>
         <div>Tekken Characters:</div> </br>
         <div>
             <#list chars as char>
@@ -30,5 +16,4 @@
             <input type="hidden" name="_csrf" value="${_csrf.token}" />
             <input type="submit" value="Sign Out"/>
         </form>
-    </body>
-</html>
+</@c.page>

@@ -1,18 +1,31 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Fighting room</title>
-</head>
-<body>
-Add new User</br>
-<#if message??>
-    ${message}
-</#if>
-<form method="post">
-    <div><label> User Name : <input type="text" name="username"/> </label></div>
-    <div><label> Password: <input type="password" name="password"/> </label></div>
-    <input type="hidden" name="_csrf" value="${_csrf.token}" />
-    <div><input type="submit" value="Registrate"/></div>
-</form>
-</body>
-</html>
+<#import "parts/common.ftlh" as c>
+<@c.page>
+    Добавьте нового пользователя!</br>
+    <#if message??>
+        ${message}
+    </#if>
+    <div class="form-group mt-3">
+        <form method="post">
+            <div class="form-group">
+                <label> User Name : <input type="text" class="form-control ${(usernameError??)?string('is-invalid', '')}" name="username"/>
+                <#if usernameError??>
+                    <div class="invalid-feedback">
+                        ${usernameError}
+                    </div>
+                </#if>
+                </label>
+            </div>
+            <div class="form-group">
+                <label> Password: <input type="password" class="form-control ${(passwordError??)?string('is-invalid', '')} name="password"/>
+                <#if passwordError??>
+                    <div class="invalid-feedback">
+                        ${passwordError}
+                    </div>
+                </#if>
+                </label>
+            </div>
+            <input type="hidden" name="_csrf" value="${_csrf.token}" />
+            <div><input type="submit" class="btn btn-primary" value="Зарегистрировать"/></div>
+        </form>
+    </div>
+</@c.page>
