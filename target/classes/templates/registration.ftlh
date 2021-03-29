@@ -16,7 +16,7 @@
                 </label>
             </div>
             <div class="form-group">
-                <label> Password: <input type="password" class="form-control ${(passwordError??)?string('is-invalid', '')} name="password"/>
+                <label> Password: <input type="password" name="password" class="form-control ${(passwordError??)?string('is-invalid', '')}"  />
                 <#if passwordError??>
                     <div class="invalid-feedback">
                         ${passwordError}

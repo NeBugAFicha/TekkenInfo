@@ -20,7 +20,6 @@ public class User implements UserDetails {
     @Length(max=30, message = "Слишком длинное имя пользователя, максимальное число символов 30")
     private String username;
     @NotBlank(message="Пожалуйста, введите пароль")
-    @Length(max=30, message = "Слишком длинный пароль, максимальное число символов 30")
     private String password;
     private boolean active;
 
