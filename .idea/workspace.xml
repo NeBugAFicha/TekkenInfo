@@ -4,20 +4,13 @@
     <list default="true" id="014cf507-6d15-4887-b3b1-8a5e42d03643" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SimpleSpringWebApp" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleSpringWebApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/characterEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/characterEdit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/update.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/greeting.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/common.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" afterDir="false" />
@@ -109,6 +102,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -146,6 +140,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -384,7 +379,10 @@
       <workItem from="1616755445009" duration="2528000" />
       <workItem from="1616782959101" duration="594000" />
       <workItem from="1616852895693" duration="4366000" />
-      <workItem from="1617005661738" duration="1548000" />
+      <workItem from="1617005661738" duration="2979000" />
+      <workItem from="1617027245652" duration="4001000" />
+      <workItem from="1617087888148" duration="2952000" />
+      <workItem from="1617094856659" duration="5779000" />
     </task>
     <servers />
   </component>
@@ -405,6 +403,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616430441671" />
+    <state x="725" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617094611021">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="725" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617094611021" />
+    <state x="599" y="212" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1617095206167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="599" y="212" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617095206167" />
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1615725317494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -413,38 +419,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1720" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615788786855" />
-    <state width="1860" height="246" key="GridCell.Tab.0.bottom" timestamp="1617007463840">
+    <state width="1860" height="218" key="GridCell.Tab.0.bottom" timestamp="1617100651055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="246" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617007463840" />
-    <state width="1860" height="246" key="GridCell.Tab.0.center" timestamp="1617007463840">
+    <state width="1860" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
+    <state width="1860" height="218" key="GridCell.Tab.0.center" timestamp="1617100651055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="246" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617007463840" />
-    <state width="1860" height="246" key="GridCell.Tab.0.left" timestamp="1617007463839">
+    <state width="1860" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
+    <state width="1860" height="218" key="GridCell.Tab.0.left" timestamp="1617100651055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="246" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617007463839" />
-    <state width="1860" height="246" key="GridCell.Tab.0.right" timestamp="1617007463840">
+    <state width="1860" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
+    <state width="1860" height="218" key="GridCell.Tab.0.right" timestamp="1617100651055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="246" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617007463840" />
-    <state width="1860" height="246" key="GridCell.Tab.1.bottom" timestamp="1617007463841">
+    <state width="1860" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
+    <state width="1860" height="218" key="GridCell.Tab.1.bottom" timestamp="1617100651055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="246" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617007463841" />
-    <state width="1860" height="246" key="GridCell.Tab.1.center" timestamp="1617007463841">
+    <state width="1860" height="218" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
+    <state width="1860" height="218" key="GridCell.Tab.1.center" timestamp="1617100651055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="246" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617007463841" />
-    <state width="1860" height="246" key="GridCell.Tab.1.left" timestamp="1617007463840">
+    <state width="1860" height="218" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
+    <state width="1860" height="218" key="GridCell.Tab.1.left" timestamp="1617100651055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="246" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617007463840" />
-    <state width="1860" height="246" key="GridCell.Tab.1.right" timestamp="1617007463841">
+    <state width="1860" height="218" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
+    <state width="1860" height="218" key="GridCell.Tab.1.right" timestamp="1617100651055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="246" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617007463841" />
+    <state width="1860" height="218" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
     <state width="1860" height="344" key="GridCell.Tab.2.bottom" timestamp="1616749353840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -469,14 +475,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="775" y="454" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1616752055390" />
-    <state x="462" y="165" width="995" height="709" key="SettingsEditor" timestamp="1616430493332">
+    <state x="462" y="165" width="995" height="709" key="SettingsEditor" timestamp="1617033550345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="165" width="995" height="709" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1616430493332" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1617005779379">
+    <state x="462" y="165" width="995" height="709" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617033550345" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1617114512781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617005779379" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617114512781" />
     <state x="690" y="275" width="540" height="496" key="extract.method.dialog" timestamp="1616752043002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
