@@ -14,6 +14,7 @@ public class CharMapper implements RowMapper<Char> {
         character.setName(resultSet.getString("name"));
         character.setFightingStyle(resultSet.getString("style"));
         character.setTierLvl(Tier.valueOf(resultSet.getString("tier")));
+        character.setImage(resultSet.getString("image"));
         return character;
     }
 }

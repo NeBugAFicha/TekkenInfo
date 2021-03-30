@@ -27,8 +27,8 @@ public class UserServiceImpl implements UserDetailsService, UserService{
 
     @Override
     public void addChar(Char character){
-        String sql = "INSERT into characters (name,style,tier) values (?,?,?)";
-        jdbcTemplate.update(sql,character.getName(),character.getFightingStyle(),character.getTierLvl().toString());
+        String sql = "INSERT into characters (name,style,tier,image) values (?,?,?,?)";
+        jdbcTemplate.update(sql,character.getName(),character.getFightingStyle(),character.getTierLvl().toString(),character.getImage());
     }
     @Override
     public List<Char> findAll(){

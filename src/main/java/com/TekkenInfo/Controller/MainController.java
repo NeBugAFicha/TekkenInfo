@@ -7,6 +7,7 @@ import com.TekkenInfo.Domain.User;
 import com.TekkenInfo.Repos.UserRepo;
 import com.TekkenInfo.Service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,8 +18,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -34,6 +38,8 @@ public class MainController {
     private UserRepo userRepo;
     @Autowired
     private PasswordEncoder passwordEncoder;
+    @Value("${upload.path}")
+    private String uploadPath;
 
     @GetMapping
     public String announce(
@@ -55,11 +61,30 @@ public class MainController {
     public String addCharacter(
             @Valid Char character,
             BindingResult bindingResult,
-            Model model) {
+            Model model,
+            @RequestParam("file") MultipartFile file
+            ) throws IOException {
         if(bindingResult.hasErrors()){
             Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
             model.mergeAttributes(errorsMap);
-        } else userService.addChar(character);
+        } else {
+            if (file != null && !file.getOriginalFilename().isEmpty()) {
+                File uploadDir = new File(uploadPath);
+
+                if (!uploadDir.exists()) {
+                    uploadDir.mkdir();
+                }
+
+                String uuidFile = UUID.randomUUID().toString();
+                String resultFilename = uuidFile + "." + file.getOriginalFilename();
+
+                file.transferTo(new File(uploadPath + "/" + resultFilename));
+
+                character.setImage(resultFilename);
+            }
+
+            userService.addChar(character);
+        }
         Iterable<Char> allChars = userService.findAll();
         model.addAttribute("tierLvls",tierLvls);
         model.addAttribute("chars",allChars);

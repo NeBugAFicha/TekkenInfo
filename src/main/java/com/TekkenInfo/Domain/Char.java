@@ -12,6 +12,7 @@ public class Char {
     @NotBlank(message="Пожалуйста, введите боевой стиль персонажа")
     private String fightingStyle;
     private Tier tierLvl;
+    private String image;
     public Char(){}
 
     public Char(String name, String fightingStyle, String tierLvl) {
@@ -42,5 +43,13 @@ public class Char {
 
     public void setTierLvl(Tier tierLvl) {
         this.tierLvl = tierLvl;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

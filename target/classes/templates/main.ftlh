@@ -3,13 +3,21 @@
 <@c.page>
         <@chr.page/>
         <div>Tekken Characters:</div> </br>
-        <div>
-            <#list chars as char>
-                <span>${char.getName()}</span>
-                <strong>${char.getFightingStyle()}</strong>
-                <i>${char.getTierLvl().toString()}</i>
-                <a href="delete/${char.getName()}">Delete</a>
-                <a href="update/${char.getName()}">Update</a></br>
-            </#list>
-        </div>
+    <div class="card-columns">
+        <#list chars as char>
+            <div class="card my-3">
+                <#if char.image??>
+                    <img src="/img/${char.image}" class="card-img-top">
+                </#if>
+                <div class="m-2">
+                    <span>${char.name}</span>
+                    <span>${char.fightingStyle}</span>
+                    <i>${char.tierLvl.toString()}</i>
+                    <a href="delete/${char.getName()}">Delete</a>
+                    <a href="update/${char.getName()}">Update</a></br>
+                </div>
+            </div>
+        <#else>
+        </#list>
+    </div>
 </@c.page>

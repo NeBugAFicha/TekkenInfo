@@ -24,6 +24,9 @@
                     </#list>
                 </select>
             </div>
+            <div class="form-group">
+                <input type="file" class="form-control" name="file" />
+            </div>
             <input type="hidden" name="_csrf" value="${_csrf.token}" />
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Подтвердить</button>

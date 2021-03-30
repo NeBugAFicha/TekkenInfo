@@ -4,13 +4,23 @@
     <list default="true" id="014cf507-6d15-4887-b3b1-8a5e42d03643" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SimpleSpringWebApp" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleSpringWebApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Mapper/CharMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Mapper/CharMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/characterEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/characterEdit.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/MvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/characterEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/characterEdit.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/security.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" afterDir="false" />
@@ -90,6 +100,13 @@
         <item name="TekkenDB" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="tekkendb: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TekkenDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tekkendb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="characters: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -383,22 +400,20 @@
       <workItem from="1617027245652" duration="4001000" />
       <workItem from="1617087888148" duration="2952000" />
       <workItem from="1617094856659" duration="5779000" />
+      <workItem from="1617114505540" duration="4043000" />
+      <workItem from="1617133155128" duration="370000" />
+      <workItem from="1617133650195" duration="2057000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="183" key="#Notifications" timestamp="1617130775439">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="183" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1617130775439" />
     <state x="292" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616430441671">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -411,6 +426,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="599" y="212" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617095206167" />
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1617130889546">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617130889546" />
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1615725317494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -419,38 +438,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1720" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615788786855" />
-    <state width="1860" height="218" key="GridCell.Tab.0.bottom" timestamp="1617100651055">
+    <state width="1860" height="217" key="GridCell.Tab.0.bottom" timestamp="1617135716149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
-    <state width="1860" height="218" key="GridCell.Tab.0.center" timestamp="1617100651055">
+    <state width="1860" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617135716149" />
+    <state width="1860" height="217" key="GridCell.Tab.0.center" timestamp="1617135716149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
-    <state width="1860" height="218" key="GridCell.Tab.0.left" timestamp="1617100651055">
+    <state width="1860" height="217" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617135716149" />
+    <state width="1860" height="217" key="GridCell.Tab.0.left" timestamp="1617135716149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
-    <state width="1860" height="218" key="GridCell.Tab.0.right" timestamp="1617100651055">
+    <state width="1860" height="217" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617135716149" />
+    <state width="1860" height="217" key="GridCell.Tab.0.right" timestamp="1617135716149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
-    <state width="1860" height="218" key="GridCell.Tab.1.bottom" timestamp="1617100651055">
+    <state width="1860" height="217" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617135716149" />
+    <state width="1860" height="217" key="GridCell.Tab.1.bottom" timestamp="1617135716149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="218" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
-    <state width="1860" height="218" key="GridCell.Tab.1.center" timestamp="1617100651055">
+    <state width="1860" height="217" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617135716149" />
+    <state width="1860" height="217" key="GridCell.Tab.1.center" timestamp="1617135716149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="218" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
-    <state width="1860" height="218" key="GridCell.Tab.1.left" timestamp="1617100651055">
+    <state width="1860" height="217" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617135716149" />
+    <state width="1860" height="217" key="GridCell.Tab.1.left" timestamp="1617135716149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="218" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
-    <state width="1860" height="218" key="GridCell.Tab.1.right" timestamp="1617100651055">
+    <state width="1860" height="217" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617135716149" />
+    <state width="1860" height="217" key="GridCell.Tab.1.right" timestamp="1617135716149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="218" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617100651055" />
+    <state width="1860" height="217" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617135716149" />
     <state width="1860" height="344" key="GridCell.Tab.2.bottom" timestamp="1616749353840">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -479,6 +498,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="462" y="165" width="995" height="709" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617033550345" />
+    <state x="807" y="441" key="VCS.ChangelistChooser" timestamp="1617130844826">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="441" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617130844826" />
+    <state x="540" y="180" key="com.intellij.database.dbimport.ImportDialog" timestamp="1617130645289">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="180" key="com.intellij.database.dbimport.ImportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617130645289" />
+    <state x="676" y="166" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1617135028477">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="676" y="166" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617135028477" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1617114512781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
