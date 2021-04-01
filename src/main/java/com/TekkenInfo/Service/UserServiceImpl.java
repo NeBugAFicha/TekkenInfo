@@ -24,6 +24,7 @@ import java.util.List;
 public class UserServiceImpl implements UserDetailsService, UserService{
     @Autowired
     public JdbcTemplate jdbcTemplate;
+    public static String sortWish = "None";
 
     @Override
     public void addChar(Char character){
@@ -33,7 +34,9 @@ public class UserServiceImpl implements UserDetailsService, UserService{
     @Override
     public List<Char> findAll(){
         String sql = "Select * from characters";
-        return jdbcTemplate.query(sql,new CharMapper());
+        if(sortWish.equals("None")) return jdbcTemplate.query(sql,new CharMapper());
+        if(sortWish.equals("Имя (по возр.)")) return jdbcTemplate.query("Select * from characters order by name",new CharMapper());
+        return null;
     }
 
     @Override
@@ -53,6 +56,19 @@ public class UserServiceImpl implements UserDetailsService, UserService{
         String sql = "Update characters set name = ?, style = ?, tier = ? where name = ?";
         jdbcTemplate.update(sql,character.getName(),character.getFightingStyle(),character.getTierLvl().toString(),oldName);
     }
+
+    @Override
+    public List<Char> sortChars(String critery) {
+        if(critery.equals("Имя (по возр.)")) return jdbcTemplate.query("Select * from characters order by name",new CharMapper());
+        if(critery.equals("Имя (по убыв.)")) return jdbcTemplate.query("Select * from characters order by name DESC",new CharMapper());
+        if(critery.equals("Стиль боя (по возр.)")) return jdbcTemplate.query("Select * from characters order by style", new CharMapper());
+        if(critery.equals("Стиль боя (по убыв.)")) return jdbcTemplate.query("Select * from characters order by style DESC", new CharMapper());
+        if(critery.equals("Тирность (по возр.)")) return jdbcTemplate.query("Select * from characters order by tier", new CharMapper());
+        if(critery.equals("Тирность (по убыв.)")) return jdbcTemplate.query("Select * from characters order by tier DESC ", new CharMapper());
+        if(critery.equals("None")) return findAll();
+        return null;
+    }
+
 
     @Autowired
     private UserRepo userRepo;

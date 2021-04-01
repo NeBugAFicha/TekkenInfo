@@ -5,6 +5,7 @@ import com.TekkenInfo.Domain.Role;
 import com.TekkenInfo.Domain.Tier;
 import com.TekkenInfo.Domain.User;
 import com.TekkenInfo.Repos.UserRepo;
+import com.TekkenInfo.Service.UserService;
 import com.TekkenInfo.Service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -34,6 +35,7 @@ public class MainController {
     @Autowired
     public UserServiceImpl userService;
     private List<String> tierLvls = new ArrayList<String>(Arrays.asList("S", "A", "B", "C", "D", "EDDY"));
+    private List<String> sortCriteries = new ArrayList<String>(Arrays.asList("None", "Имя (по возр.)", "Имя (по убыв.)", "Стиль боя (по возр.)", "Стиль боя (по убыв.)","Тирность (по возр.)", "Тирность (по убыв.)"));
     @Autowired
     private UserRepo userRepo;
     @Autowired
@@ -51,10 +53,18 @@ public class MainController {
 
     @GetMapping("main")
     public String hello(Model model) {
-        Iterable<Char> allChars = userService.findAll();
+        Iterable<Char> allChars = null;
+        if(!UserServiceImpl.sortWish.equals("None")) allChars = userService.sortChars(UserServiceImpl.sortWish);
+        else allChars = userService.findAll();
+        model.addAttribute("sortCriteries",sortCriteries);
         model.addAttribute("tierLvls",tierLvls);
         model.addAttribute("chars",allChars);
         return "main";
+    }
+    @PostMapping("sort")
+    public String sortChars(@RequestParam String critery, Model model){
+        UserServiceImpl.sortWish = critery;
+        return "redirect:/main";
     }
 
     @PostMapping("main")
@@ -86,6 +96,7 @@ public class MainController {
             userService.addChar(character);
         }
         Iterable<Char> allChars = userService.findAll();
+        model.addAttribute("sortCriteries",sortCriteries);
         model.addAttribute("tierLvls",tierLvls);
         model.addAttribute("chars",allChars);
         return "main";

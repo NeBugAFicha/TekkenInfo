@@ -11,4 +11,5 @@ public interface UserService {
     void deleteChar(String charName);
     Char findByName(String charName);
     void updateChar(Char character,String oldName);
+    List<Char> sortChars(String critery);
 }
