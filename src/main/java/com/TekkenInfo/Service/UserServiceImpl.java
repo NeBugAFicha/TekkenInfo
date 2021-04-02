@@ -34,9 +34,7 @@ public class UserServiceImpl implements UserDetailsService, UserService{
     @Override
     public List<Char> findAll(){
         String sql = "Select * from characters";
-        if(sortWish.equals("None")) return jdbcTemplate.query(sql,new CharMapper());
-        if(sortWish.equals("Имя (по возр.)")) return jdbcTemplate.query("Select * from characters order by name",new CharMapper());
-        return null;
+        return jdbcTemplate.query(sql,new CharMapper());
     }
 
     @Override
@@ -59,12 +57,12 @@ public class UserServiceImpl implements UserDetailsService, UserService{
 
     @Override
     public List<Char> sortChars(String critery) {
-        if(critery.equals("Имя (по возр.)")) return jdbcTemplate.query("Select * from characters order by name",new CharMapper());
-        if(critery.equals("Имя (по убыв.)")) return jdbcTemplate.query("Select * from characters order by name DESC",new CharMapper());
-        if(critery.equals("Стиль боя (по возр.)")) return jdbcTemplate.query("Select * from characters order by style", new CharMapper());
-        if(critery.equals("Стиль боя (по убыв.)")) return jdbcTemplate.query("Select * from characters order by style DESC", new CharMapper());
-        if(critery.equals("Тирность (по возр.)")) return jdbcTemplate.query("Select * from characters order by tier", new CharMapper());
-        if(critery.equals("Тирность (по убыв.)")) return jdbcTemplate.query("Select * from characters order by tier DESC ", new CharMapper());
+        if(critery.equals("Имя(возр.)")) return jdbcTemplate.query("Select * from characters order by name",new CharMapper());
+        if(critery.equals("Имя(убыв.)")) return jdbcTemplate.query("Select * from characters order by name DESC",new CharMapper());
+        if(critery.equals("Стиль(возр.)")) return jdbcTemplate.query("Select * from characters order by style", new CharMapper());
+        if(critery.equals("Стиль(убыв.)")) return jdbcTemplate.query("Select * from characters order by style DESC", new CharMapper());
+        if(critery.equals("Тирность(возр.)")) return jdbcTemplate.query("Select * from characters order by tier", new CharMapper());
+        if(critery.equals("Тирность(убыв.)")) return jdbcTemplate.query("Select * from characters order by tier DESC ", new CharMapper());
         if(critery.equals("None")) return findAll();
         return null;
     }

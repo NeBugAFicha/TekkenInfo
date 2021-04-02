@@ -10,6 +10,7 @@ public class Char {
     @Length(max=30, message = "Слишком длинное имя, максимальное число символов 30")
     private String name;
     @NotBlank(message="Пожалуйста, введите боевой стиль персонажа")
+    @Length(max=30, message = "Слишком длинное название боевого стиля, максимальное число символов 30")
     private String fightingStyle;
     private Tier tierLvl;
     private String image;
