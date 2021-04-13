@@ -3,11 +3,14 @@ package com.TekkenInfo.Service;
 import com.TekkenInfo.Domain.Char;
 import com.TekkenInfo.Domain.Role;
 import com.TekkenInfo.Domain.User;
-import com.TekkenInfo.Mapper.CharMapper;
 
+import com.TekkenInfo.Mapper.CharMapper;
 import com.TekkenInfo.Repos.UserRepo;
+import com.fasterxml.jackson.databind.BeanProperty;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -34,7 +37,7 @@ public class UserServiceImpl implements UserDetailsService, UserService{
     @Override
     public List<Char> findAll(){
         String sql = "Select * from characters";
-        return jdbcTemplate.query(sql,new CharMapper());
+        return jdbcTemplate.query(sql, new CharMapper());
     }
 
     @Override
@@ -57,8 +60,8 @@ public class UserServiceImpl implements UserDetailsService, UserService{
 
     @Override
     public List<Char> sortChars(String critery) {
-        if(critery.equals("Имя(возр.)")) return jdbcTemplate.query("Select * from characters order by name",new CharMapper());
-        if(critery.equals("Имя(убыв.)")) return jdbcTemplate.query("Select * from characters order by name DESC",new CharMapper());
+        if(critery.equals("Имя(возр.)")) return jdbcTemplate.query("Select * from characters order by name", new CharMapper());
+        if(critery.equals("Имя(убыв.)")) return jdbcTemplate.query("Select * from characters order by name DESC", new CharMapper());
         if(critery.equals("Стиль(возр.)")) return jdbcTemplate.query("Select * from characters order by style", new CharMapper());
         if(critery.equals("Стиль(убыв.)")) return jdbcTemplate.query("Select * from characters order by style DESC", new CharMapper());
         if(critery.equals("Тирность(возр.)")) return jdbcTemplate.query("Select * from characters order by tier", new CharMapper());

@@ -16,10 +16,11 @@ public class Char {
     private String image;
     public Char(){}
 
-    public Char(String name, String fightingStyle, String tierLvl) {
+    public Char(String name, String fightingStyle, String tierLvl, String image) {
         this.name = name;
         this.fightingStyle = fightingStyle;
         this.tierLvl = Tier.valueOf(tierLvl);
+        this.image = image;
     }
 
     public String getName() {
