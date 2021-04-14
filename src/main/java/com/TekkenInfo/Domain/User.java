@@ -22,6 +22,7 @@ public class User implements UserDetails {
     @NotBlank(message="Пожалуйста, введите пароль")
     private String password;
     private boolean active;
+    public User(){}
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))

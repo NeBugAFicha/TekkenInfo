@@ -14,6 +14,7 @@ public class Char {
     private String fightingStyle;
     private Tier tierLvl;
     private String image;
+    private String charMakerName;
     public Char(){}
 
     public Char(String name, String fightingStyle, String tierLvl, String image) {
@@ -53,5 +54,13 @@ public class Char {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getCharMakerName() {
+        return charMakerName;
+    }
+
+    public void setCharMakerName(String charMakerName) {
+        this.charMakerName = charMakerName;
     }
 }

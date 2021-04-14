@@ -31,8 +31,8 @@ public class UserServiceImpl implements UserDetailsService, UserService{
 
     @Override
     public void addChar(Char character){
-        String sql = "INSERT into characters (name,style,tier,image) values (?,?,?,?)";
-        jdbcTemplate.update(sql,character.getName(),character.getFightingStyle(),character.getTierLvl().toString(),character.getImage());
+        String sql = "INSERT into characters (name,style,tier,image, charMakerName) values (?,?,?,?,?)";
+        jdbcTemplate.update(sql,character.getName(),character.getFightingStyle(),character.getTierLvl().toString(),character.getImage(), character.getCharMakerName());
     }
     @Override
     public List<Char> findAll(){
@@ -66,7 +66,6 @@ public class UserServiceImpl implements UserDetailsService, UserService{
         if(critery.equals("Стиль(убыв.)")) return jdbcTemplate.query("Select * from characters order by style DESC", new CharMapper());
         if(critery.equals("Тирность(возр.)")) return jdbcTemplate.query("Select * from characters order by tier", new CharMapper());
         if(critery.equals("Тирность(убыв.)")) return jdbcTemplate.query("Select * from characters order by tier DESC ", new CharMapper());
-        if(critery.equals("None")) return findAll();
         return null;
     }
 
