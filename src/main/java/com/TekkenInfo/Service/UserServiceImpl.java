@@ -1,33 +1,27 @@
 package com.TekkenInfo.Service;
 
 import com.TekkenInfo.Domain.Char;
-import com.TekkenInfo.Domain.Role;
 import com.TekkenInfo.Domain.User;
-
 import com.TekkenInfo.Mapper.CharMapper;
 import com.TekkenInfo.Repos.UserRepo;
-import com.fasterxml.jackson.databind.BeanProperty;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
-
-import java.sql.ResultSet;
 import java.util.List;
 
 @Service
+@Component
 public class UserServiceImpl implements UserDetailsService, UserService{
     @Autowired
     public JdbcTemplate jdbcTemplate;
     public static String sortWish = "None";
+    @Autowired
+    private UserRepo userRepo;
 
     @Override
     public void addChar(Char character){
@@ -48,14 +42,19 @@ public class UserServiceImpl implements UserDetailsService, UserService{
 
     @Override
     public Char findByName(String charName){
-        String sql = "Select * from characters where name = ?";
-        Char character = jdbcTemplate.query(sql,new CharMapper(),charName).get(0);
-        return character;
+        String sql = "Select * from characters where name = '" + charName + "'";
+        return jdbcTemplate.queryForObject(sql,new CharMapper());
     }
     @Override
     public void updateChar(Char character, String oldName){
         String sql = "Update characters set name = ?, style = ?, tier = ? where name = ?";
         jdbcTemplate.update(sql,character.getName(),character.getFightingStyle(),character.getTierLvl().toString(),oldName);
+    }
+
+    @Override
+    public void updateCharMakerNameForChars(String oldName, String newName) {
+        String sql = "Update characters set charMakerName = ? where charMakerName = ?";
+        jdbcTemplate.update(sql,newName,oldName);
     }
 
     @Override
@@ -70,8 +69,7 @@ public class UserServiceImpl implements UserDetailsService, UserService{
     }
 
 
-    @Autowired
-    private UserRepo userRepo;
+
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

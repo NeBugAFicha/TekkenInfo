@@ -1,7 +1,6 @@
 package com.TekkenInfo.Service;
 
 import com.TekkenInfo.Domain.Char;
-import com.TekkenInfo.Domain.User;
 
 import java.util.List;
 
@@ -12,4 +11,5 @@ public interface UserService {
     Char findByName(String charName);
     void updateChar(Char character,String oldName);
     List<Char> sortChars(String critery);
+    void updateCharMakerNameForChars(String oldName, String newName);
 }

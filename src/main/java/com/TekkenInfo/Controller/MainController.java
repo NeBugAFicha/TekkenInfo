@@ -2,20 +2,17 @@ package com.TekkenInfo.Controller;
 
 import com.TekkenInfo.Domain.Char;
 import com.TekkenInfo.Domain.Role;
-import com.TekkenInfo.Domain.Tier;
 import com.TekkenInfo.Domain.User;
 import com.TekkenInfo.Repos.UserRepo;
 import com.TekkenInfo.Service.UserService;
 import com.TekkenInfo.Service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,15 +23,13 @@ import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 import static com.TekkenInfo.Controller.ControllerUtils.getErrors;
 
 @Controller
 public class MainController {
     @Autowired
-    public UserServiceImpl userService;
+    public UserService userService;
     private List<String> tierLvls = new ArrayList<String>(Arrays.asList("S", "A", "B", "C", "D", "EDDY"));
     private List<String> sortCriteries = new ArrayList<String>(Arrays.asList("Имя(возр.)", "Имя(убыв.)", "Стиль(возр.)", "Стиль(убыв.)","Тирность(возр.)", "Тирность(убыв.)"));
     private List<String> searchBy = new ArrayList<>(Arrays.asList("name","style","tier","author"));
@@ -108,10 +103,14 @@ public class MainController {
             model.mergeAttributes(errorsMap);
             model.addAttribute("char",character);
             Iterable<Char> allChars = null;
-            if(!UserServiceImpl.sortWish.equals("None")) allChars = userService.sortChars(UserServiceImpl.sortWish);
+            if(!UserServiceImpl.sortWish.equals("None")) {
+                allChars = userService.sortChars(UserServiceImpl.sortWish);
+                model.addAttribute("selectedSortCritery",UserServiceImpl.sortWish);
+            }
             else allChars = userService.findAll();
             model.addAttribute("sortCriteries",sortCriteries);
             model.addAttribute("tierLvls",tierLvls);
+            model.addAttribute("searchBy",searchBy);
             model.addAttribute("chars",allChars);
             return "main";
         }
@@ -129,7 +128,7 @@ public class MainController {
 
                 character.setImage(resultFilename);
             }
-            character.setCharMakerName(charMakerName);
+            character.setCharMakerName(userRepo.findByUsername(charMakerName).getUsername());
             userService.addChar(character);
             model.addAttribute("char", null);
             return "redirect:/main";
@@ -201,6 +200,22 @@ public class MainController {
         userRepo.save(user);
 
         return "redirect:/login";
+    }
+    @GetMapping("/profile")
+    public String getProfile(){
+        return "profile";
+    }
+    @PostMapping("/profile")
+    public String editProfile(@RequestParam String userName, @AuthenticationPrincipal User user, Model model){
+        String oldName = user.getUsername();
+        if(userName.length()==0||userName.length()>30){
+            model.addAttribute("nameError","Некорректный ввод имени пользователя");
+            return "profile";
+        }
+        user.setUsername(userName);
+        userService.updateCharMakerNameForChars(oldName,user.getUsername());
+        userRepo.save(user);
+        return "redirect:/main";
     }
 
 

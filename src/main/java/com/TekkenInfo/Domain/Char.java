@@ -2,7 +2,6 @@ package com.TekkenInfo.Domain;
 
 import org.hibernate.validator.constraints.Length;
 
-import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 public class Char {

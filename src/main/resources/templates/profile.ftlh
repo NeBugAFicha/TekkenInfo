@@ -1,0 +1,22 @@
+<#import "parts/common.ftlh" as c>
+<#include "parts/security.ftlh">
+<@c.page>
+    <#include "parts/security.ftlh">
+    Редактор моего профиля
+    <div class="form-group mt-3">
+        <form method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="userName" value="${user.username}" placeholder="Имя Пользователя"></br>
+                <#if nameError??>${nameError}</#if>
+            </div>
+            Roles:
+            <#list user.roles as role>
+                    <span>${role}<#sep>, </span>
+            </#list></br>
+            <input type="hidden" value="${_csrf.token}" name="_csrf">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+            </div>
+        </form>
+    </div>
+</@c.page>

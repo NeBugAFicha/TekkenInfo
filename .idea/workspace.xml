@@ -4,25 +4,26 @@
     <list default="true" id="014cf507-6d15-4887-b3b1-8a5e42d03643" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SimpleSpringWebApp" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleSpringWebApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Mapper/CharMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Mapper/CharMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Repos/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Repos/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/characterEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/characterEdit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/update.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usersList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/usersList.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Mapper/CharMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Mapper/CharMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Repos/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Repos/UserRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/characterEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/characterEdit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/security.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/update.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/update.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/userEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/userEdit.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/usersList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/usersList.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" afterDir="false" />
@@ -122,6 +123,13 @@
         <item name="TekkenDB" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="tekkendb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user_role: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TekkenDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tekkendb: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="usr: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -137,6 +145,7 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -183,6 +192,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Edit As Language" value="MySQL" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -194,11 +206,48 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.TekkenInfo.Repos" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="UserRepoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TekkenInfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.TekkenInfo.Repos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.TekkenInfo.Repos" />
+      <option name="MAIN_CLASS_NAME" value="com.TekkenInfo.Repos.UserRepoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepoTest.findByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TekkenInfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.TekkenInfo.Repos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.TekkenInfo.Repos" />
+      <option name="MAIN_CLASS_NAME" value="com.TekkenInfo.Repos.UserRepoTest" />
+      <option name="METHOD_NAME" value="findByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="templates in TekkenInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TekkenInfo" />
       <extension name="coverage">
@@ -285,6 +334,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="JUnit.UserRepoTest" />
+        <item itemvalue="JUnit.UserRepoTest.findByUsername" />
         <item itemvalue="JUnit.templates in TekkenInfo" />
       </list>
     </recent_temporary>
@@ -454,7 +505,10 @@
       <workItem from="1618387744914" duration="13695000" />
       <workItem from="1618409949257" duration="302000" />
       <workItem from="1618410304585" duration="2797000" />
-      <workItem from="1618421566850" duration="4254000" />
+      <workItem from="1618421566850" duration="5026000" />
+      <workItem from="1618463061279" duration="1867000" />
+      <workItem from="1618465008360" duration="14151000" />
+      <workItem from="1618900082128" duration="10749000" />
     </task>
     <servers />
   </component>
@@ -478,54 +532,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="599" y="212" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617095206167" />
-    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1618402933137">
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1618903140600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618402933137" />
+    <state x="765" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1618903140600" />
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1615725317494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="811" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615725317494" />
-    <state x="756" y="410" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618387956764">
+    <state x="756" y="410" width="408" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618911202043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="756" y="410" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1618387956764" />
+    <state x="756" y="410" width="408" height="266" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1618911202043" />
     <state x="100" y="100" width="1720" height="840" key="DiffContextDialog" timestamp="1615788786855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1720" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615788786855" />
-    <state width="1528" height="213" key="GridCell.Tab.0.bottom" timestamp="1618426456526">
+    <state width="1516" height="213" key="GridCell.Tab.0.bottom" timestamp="1618907295741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1528" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618426456526" />
-    <state width="1528" height="213" key="GridCell.Tab.0.center" timestamp="1618426456526">
+    <state width="1516" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618907295741" />
+    <state width="1516" height="213" key="GridCell.Tab.0.center" timestamp="1618907295741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1528" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618426456526" />
-    <state width="1528" height="213" key="GridCell.Tab.0.left" timestamp="1618426456526">
+    <state width="1516" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618907295741" />
+    <state width="1516" height="213" key="GridCell.Tab.0.left" timestamp="1618907295741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1528" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618426456526" />
-    <state width="1528" height="213" key="GridCell.Tab.0.right" timestamp="1618426456526">
+    <state width="1516" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618907295741" />
+    <state width="1516" height="213" key="GridCell.Tab.0.right" timestamp="1618907295741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1528" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618426456526" />
-    <state width="1528" height="213" key="GridCell.Tab.1.bottom" timestamp="1618426456526">
+    <state width="1516" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618907295741" />
+    <state width="1516" height="213" key="GridCell.Tab.1.bottom" timestamp="1618907295742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1528" height="213" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618426456526" />
-    <state width="1528" height="213" key="GridCell.Tab.1.center" timestamp="1618426456526">
+    <state width="1516" height="213" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1618907295742" />
+    <state width="1516" height="213" key="GridCell.Tab.1.center" timestamp="1618907295741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1528" height="213" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618426456526" />
-    <state width="1528" height="213" key="GridCell.Tab.1.left" timestamp="1618426456526">
+    <state width="1516" height="213" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1618907295741" />
+    <state width="1516" height="213" key="GridCell.Tab.1.left" timestamp="1618907295741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1528" height="213" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618426456526" />
-    <state width="1528" height="213" key="GridCell.Tab.1.right" timestamp="1618426456526">
+    <state width="1516" height="213" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1618907295741" />
+    <state width="1516" height="213" key="GridCell.Tab.1.right" timestamp="1618907295742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1528" height="213" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618426456526" />
+    <state width="1516" height="213" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1618907295742" />
     <state width="930" height="343" key="GridCell.Tab.2.bottom" timestamp="1618409772446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -570,10 +624,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="676" y="166" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618410969881" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1618422197057">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1618900099968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618422197057" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618900099968" />
+    <state x="731" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1618465611977">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1618465611977" />
     <state x="690" y="275" width="540" height="496" key="extract.method.dialog" timestamp="1616752043002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
