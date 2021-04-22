@@ -1,8 +1,10 @@
 package com.TekkenInfo.Controller;
 
 import com.TekkenInfo.Domain.Char;
+import com.TekkenInfo.Domain.Guide;
 import com.TekkenInfo.Domain.Role;
 import com.TekkenInfo.Domain.User;
+import com.TekkenInfo.Repos.GuideRepo;
 import com.TekkenInfo.Repos.UserRepo;
 import com.TekkenInfo.Service.UserService;
 import com.TekkenInfo.Service.UserServiceImpl;
@@ -35,6 +37,8 @@ public class MainController {
     private List<String> searchBy = new ArrayList<>(Arrays.asList("name","style","tier","author"));
     @Autowired
     private UserRepo userRepo;
+    @Autowired
+    private GuideRepo guideRepo;
     @Autowired
     private PasswordEncoder passwordEncoder;
     @Value("${upload.path}")
@@ -157,7 +161,7 @@ public class MainController {
     }
 
     @PostMapping("/update/{charName}")
-    public String addCharacter(
+    public String updateCharacter(
             @Valid Char character,
             BindingResult bindingResult,
             Model model,
@@ -216,6 +220,56 @@ public class MainController {
         userService.updateCharMakerNameForChars(oldName,user.getUsername());
         userRepo.save(user);
         return "redirect:/main";
+    }
+
+    @GetMapping("/guides")
+    public String getGuides(Model model) {
+        List<Guide> guides = guideRepo.findAll();
+        model.addAttribute("guides", guides);
+        return "guides";
+    }
+    @PostMapping("/guides")
+    public String addGuide(
+            @Valid Guide guide,
+            BindingResult bindingResult,
+            Model model,
+            @AuthenticationPrincipal User user){
+         if(bindingResult.hasErrors()) {
+             Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
+             model.mergeAttributes(errorsMap);
+             model.addAttribute("newGuide", guide);
+             model.addAttribute("guides", guideRepo.findAll());
+             return "guides";
+         }
+         user.setGuieds(Arrays.asList(guide));
+         userRepo.save(user);
+         return "redirect:/guides";
+    }
+    @GetMapping("/deleteGuide/{guide}")
+    public String deleteGuide(@PathVariable Guide guide){
+        guideRepo.delete(guide);
+        return "redirect:/guides";
+    }
+    @GetMapping("/updateGuide/{guide}")
+    public String updateGuide(@PathVariable Guide guide, Model model){
+        model.addAttribute("newGuide", guide);
+        return "updateGuide";
+    }
+    @PostMapping("/updateGuide/{guide}")
+    public String updateGuide(
+            @Valid Guide newGuide,
+            BindingResult bindingResult,
+            Model model,
+            @AuthenticationPrincipal User user){
+        if(bindingResult.hasErrors()) {
+            Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
+            model.mergeAttributes(errorsMap);
+            model.addAttribute("newGuide", newGuide);
+            return "updateGuide";
+        }
+        guideRepo.save(newGuide);
+        return "redirect:/guides";
+
     }
 
 

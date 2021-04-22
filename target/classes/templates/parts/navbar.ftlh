@@ -21,6 +21,10 @@
                 <a class="nav-link" href="/profile">My profile</a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="/guides">Guides</a>
+            </li>
+
         </ul>
             <form action="/logout" method="post">
                 <input type="hidden" name="_csrf" value="${_csrf.token}" />

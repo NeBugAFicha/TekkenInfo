@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -29,6 +30,8 @@ public class User implements UserDetails {
     @Enumerated(EnumType.STRING)
     private Set<Role> roles;
 
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "author")
+    private List<Guide> guieds;
     public Long getId() {
         return id;
     }
@@ -92,5 +95,16 @@ public class User implements UserDetails {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public List<Guide> getGuieds() {
+        return guieds;
+    }
+
+    public void setGuieds(List<Guide> guieds) {
+        if(guieds!=null) guieds.forEach(guide -> {
+            guide.setAuthor(this);
+        });
+        this.guieds = guieds;
     }
 }
