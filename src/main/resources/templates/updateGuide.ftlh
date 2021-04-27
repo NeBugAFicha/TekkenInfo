@@ -1,7 +1,7 @@
 <#import "parts/common.ftlh" as c>
 <@c.page>
     <div class="form-group mt-3">
-        <form method="post" enctype="multipart/form-data">
+        <form method="post" enctype="multipart/form-data" action="/updateGuide">
             <div class="form-group">
                 <input type="text" class="form-control ${(titleError??)?string('is-invalid', '')}" <#if newGuide??>value="${newGuide.title}"</#if> name="title" placeholder="Название гайда" />
                 <#if titleError??>
@@ -18,6 +18,7 @@
                     </div>
                 </#if>
             </div>
+            <input type="hidden" name="id" value = "${newGuide.getId()}" />
             <input type="hidden" name="_csrf" value="${_csrf.token}" />
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Подтвердить</button>

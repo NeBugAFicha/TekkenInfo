@@ -8,21 +8,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/">Хоум</a>
 
             <li class="nav-item">
-                <a class="nav-link" href="/main">Characters</a>
+                <a class="nav-link" href="/main">Персонажи</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/user">Users</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="/profile">My profile</a>
+                <a class="nav-link" href="/user">Пользователя</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/guides">Guides</a>
+                <a class="nav-link" href="/profile">Мой профиль</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/guides">Гайды</a>
             </li>
 
         </ul>

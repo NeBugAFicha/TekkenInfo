@@ -1,13 +1,27 @@
 package com.TekkenInfo.Domain;
 
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-public enum Role implements GrantedAuthority {
-    USER, ADMIN;
+import java.util.Set;
+import java.util.stream.Collectors;
 
-    @Override
-    public String getAuthority() {
-        return name();
+public enum Role{
+    USER(Set.of("OnlyUsersStuff")), ADMIN(Set.of("AllStuff"));
+    private final Set<String> permissions;
+
+    Role(Set<String> permissions){
+        this.permissions = permissions;
+    }
+
+    public Set<String> getPermissions() {
+        return permissions;
+    }
+
+    public  Set<SimpleGrantedAuthority> getAuthorities() {
+        return getPermissions().stream()
+                .map(permission -> new SimpleGrantedAuthority(permission))
+                .collect(Collectors.toSet());
     }
 
 }

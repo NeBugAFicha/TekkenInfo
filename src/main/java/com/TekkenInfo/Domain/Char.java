@@ -1,10 +1,14 @@
 package com.TekkenInfo.Domain;
 
 import org.hibernate.validator.constraints.Length;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.validation.constraints.NotBlank;
 
 public class Char {
+
     @NotBlank(message="Пожалуйста, введите имя персонажа")
     @Length(max=30, message = "Слишком длинное имя, максимальное число символов 30")
     private String name;

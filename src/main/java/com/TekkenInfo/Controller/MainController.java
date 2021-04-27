@@ -1,15 +1,13 @@
 package com.TekkenInfo.Controller;
 
-import com.TekkenInfo.Domain.Char;
-import com.TekkenInfo.Domain.Guide;
-import com.TekkenInfo.Domain.Role;
-import com.TekkenInfo.Domain.User;
+import com.TekkenInfo.Domain.*;
 import com.TekkenInfo.Repos.GuideRepo;
 import com.TekkenInfo.Repos.UserRepo;
 import com.TekkenInfo.Service.UserService;
 import com.TekkenInfo.Service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -197,14 +195,15 @@ public class MainController {
             return "registration";
         }
 
-        user.setActive(true);
-        user.setRoles(Collections.singleton(Role.USER));
+        user.setStatus(Status.ACTIVE);
+        user.setRole(Role.USER);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
         userRepo.save(user);
 
         return "redirect:/login";
     }
+
     @GetMapping("/profile")
     public String getProfile(){
         return "profile";
@@ -255,18 +254,21 @@ public class MainController {
         model.addAttribute("newGuide", guide);
         return "updateGuide";
     }
-    @PostMapping("/updateGuide/{guide}")
+    @PostMapping("/updateGuide")
     public String updateGuide(
             @Valid Guide newGuide,
             BindingResult bindingResult,
             Model model,
-            @AuthenticationPrincipal User user){
+            @AuthenticationPrincipal User user)
+    {
+
         if(bindingResult.hasErrors()) {
             Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
             model.mergeAttributes(errorsMap);
             model.addAttribute("newGuide", newGuide);
             return "updateGuide";
         }
+        user.setGuieds(Arrays.asList(newGuide));
         guideRepo.save(newGuide);
         return "redirect:/guides";
 

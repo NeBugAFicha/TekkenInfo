@@ -5,7 +5,7 @@
         <input type="text" name="username" value="${user.username}">
         <#list roles as role>
             <div>
-                <label><input type="checkbox" name="${role}" ${user.roles?seq_contains(role)?string("checked", "")}>${role}</label>
+                <input type="checkbox" name="role" value="${role}" />
             </div>
         </#list>
         <input type="hidden" value="${user.id}" name="userId">

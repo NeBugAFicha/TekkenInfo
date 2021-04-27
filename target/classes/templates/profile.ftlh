@@ -9,9 +9,9 @@
                 <input type="text" class="form-control" name="userName" value="${user.username}" placeholder="Имя Пользователя"></br>
                 <#if nameError??>${nameError}</#if>
             </div>
-            Roles:
-            <#list user.roles as role>
-                    <span>${role}<#sep>, </span>
+            Role:
+            <#list user.getAuthorities() as authority>
+             <span>${authority}<#sep>, </span>
             </#list></br>
             <input type="hidden" value="${_csrf.token}" name="_csrf">
             <div class="form-group">

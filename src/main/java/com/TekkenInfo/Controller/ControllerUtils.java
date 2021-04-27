@@ -1,5 +1,6 @@
 package com.TekkenInfo.Controller;
 
+import com.TekkenInfo.Config.MvcConfig;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 
