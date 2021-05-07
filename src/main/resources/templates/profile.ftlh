@@ -1,7 +1,6 @@
 <#import "parts/common.ftlh" as c>
 <#include "parts/security.ftlh">
 <@c.page>
-    <#include "parts/security.ftlh">
     Редактор моего профиля
     <div class="form-group mt-3">
         <form method="post">
@@ -13,6 +12,7 @@
             <#list user.getAuthorities() as authority>
              <span>${authority}<#sep>, </span>
             </#list></br>
+            <input type="hidden" value="${user}" name="user">
             <input type="hidden" value="${_csrf.token}" name="_csrf">
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Сохранить</button>

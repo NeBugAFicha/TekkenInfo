@@ -80,7 +80,7 @@ public class UserServiceImpl implements UserDetailsService, UserService{
         if(user == null){
             throw new UsernameNotFoundException("User not found");
         }
-        return User.getUserDetailsUser(user);
+        return user;
     }
 
 

@@ -1,6 +1,7 @@
 <#import "parts/common.ftlh" as c>
-<#include "parts/security.ftlh">
 <@c.page>
+    <#include "parts/security.ftlh">
+
     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
         Add new Guide
     </a>

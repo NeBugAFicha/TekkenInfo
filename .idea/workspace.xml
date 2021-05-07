@@ -2,82 +2,221 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="014cf507-6d15-4887-b3b1-8a5e42d03643" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../SimpleSpringWebApp" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleSpringWebApp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/.idea/artifacts/JavaTravoman_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/JavaTravoman.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/artifacts/JavaTravoman_jar/JavaTravoman.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/JavaSweaper$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/JavaSweaper$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/JavaSweaper$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/JavaSweaper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/bomb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/bombed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/closed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/flaged.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/inform.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/nobomb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/num1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/num2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/num3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/num4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/num5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/num6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/num7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/num8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/opened.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/img/zero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/Bomb.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/Box.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/Coord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/Flag$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/Flag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/Game$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/GameState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/Matrix.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/out/production/JavaTravoman/sweaper/Ranges.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/bomb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/bombed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/closed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/flaged.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/inform.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/nobomb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/num1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/num2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/num3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/num4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/num5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/num6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/num7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/num8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/opened.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/res/img/zero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/JavaSweaper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/sweaper/Bomb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/sweaper/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/sweaper/Coord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/sweaper/Flag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/sweaper/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/sweaper/GameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/sweaper/Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaTravoman/src/sweaper/Ranges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/SnakeEdge.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/apple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/dot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/out/production/SnakeEdge/GameField$FieldKeyListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/out/production/SnakeEdge/GameField.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/out/production/SnakeEdge/MainWindow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/src/GameField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SnakeEdge/src/MainWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__Init_DB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__Add_admin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestJunJavaCMA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../sweater" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_39.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/src/main/webapp/WEB-INF/views/login.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/example/securingweb/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.11.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.11.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.11.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.11.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.11.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.11.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/jakarta.el-3.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.30.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.13.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.27.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-security-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-tomcat-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-security-config-5.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-5.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-security-web-5.4.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-websocket-9.0.39.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/views/login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/ControllerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/ControllerUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/guides.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/guides.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/updateGuide.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/updateGuide.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usersList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/usersList.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/MvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/ControllerUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/ControllerUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/guides.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/guides.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/security.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/security.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/profile.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profile.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/updateGuide.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/updateGuide.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources/ead0bab1-2412-45d9-bad6-0540f9e7a78b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/controller/Registration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/domain/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/domain/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/repos/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/repos/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/java/com/example/sweater/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/resources/templates/greeting.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/resources/templates/greeting.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/resources/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/resources/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/resources/templates/main.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/resources/templates/parts/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/resources/templates/parts/common.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/resources/templates/parts/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/resources/templates/parts/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/resources/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/resources/templates/registration.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/resources/templates/userEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/resources/templates/userEdit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/src/main/resources/templates/userList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/src/main/resources/templates/userList.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/sweater.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/sweater.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/config/MvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/controller/Registration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/domain/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/domain/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/domain/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/domain/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/repos/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/repos/UserRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/com/example/sweater/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/templates/greeting.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/templates/greeting.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/templates/main.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/templates/main.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/templates/parts/common.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/templates/parts/common.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/templates/parts/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/templates/parts/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/templates/registration.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/templates/registration.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/templates/userEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/templates/userEdit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sweater/target/classes/templates/userList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/target/classes/templates/userList.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/.idea/artifacts/xTrade_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/.idea/artifacts/xTrade_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/.idea/dataSources/cfe926c5-7eae-46f9-8031-5da4f7990413.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/.idea/dataSources/cfe926c5-7eae-46f9-8031-5da4f7990413.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_spring_aop_5_2_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_spring_web_5_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_spring_tx_5_2_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_spring_tx_5_2_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_spring_web_5_2_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/.idea/libraries/Maven__org_springframework_spring_aop_5_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/.idea/xTrade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/.idea/xTrade.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/src/main/java/com/marketPlace/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/src/main/webapp/WEB-INF/views/usersList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/src/main/webapp/WEB-INF/views/usersList.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/META-INF/xTrade.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/config/SpringConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/config/WebAppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/dao/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/classes/com/marketPlace/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/dao/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/classes/com/marketPlace/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.2.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.3.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/views/usersList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/../xTrade/target/xTrade-1.0-SNAPSHOT/WEB-INF/views/usersList.ftl" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +247,14 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="TekkenDB" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="tekkendb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="TekkenDB: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TekkenDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="TekkenDB: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="usr: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -118,6 +264,111 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="TekkenInfo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="197" column="9" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.ftlh">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-447">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#2063#2064#0" expanded="true" />
+                <element signature="e#2107#2108#0" expanded="true" />
+                <element signature="e#2165#2166#0" expanded="true" />
+                <element signature="e#2209#2210#0" expanded="true" />
+                <element signature="e#2464#2465#0" expanded="true" />
+                <element signature="e#2508#2509#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="77" column="93" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="64" selection-start-column="64" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://ce3c323d-b872-489b-8d3b-6173787aa2cc/schema/TekkenDB/table/usr">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+              <folding>
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -138,6 +389,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/main.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/guides.ftlh" />
+        <option value="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.template/V1__InitDB.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/User.java" />
+      </list>
+    </option>
+  </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -152,9 +422,34 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="805" />
+  </component>
   <component name="ProjectId" id="1pkRfv91BuiEUHDNBlscqFIaznb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TekkenInfo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TekkenInfo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -195,8 +490,21 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="UserRepoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -513,11 +821,117 @@
       <workItem from="1619158418725" duration="5252000" />
       <workItem from="1619258926644" duration="2441000" />
       <workItem from="1619510086193" duration="12206000" />
+      <workItem from="1620393490224" duration="47000" />
+      <workItem from="1620393613315" duration="14446000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14493000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="805" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2274678" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32959327" />
+      <window_info anchor="bottom" id="Messages" weight="0.32959327" />
+      <window_info anchor="bottom" id="SQL Generator" weight="0.32959327" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32959327" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997195" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Spring" order="7" visible="true" weight="0.32959327" />
+      <window_info anchor="bottom" id="Terminal" order="8" show_stripe_button="false" weight="0.32959327" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32959327" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32959327" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.12088698" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32959327" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3997195" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.3297568" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#Notifications" timestamp="1617130775439">
@@ -652,5 +1066,252 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="166" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1617462352286" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ce3c323d-b872-489b-8d3b-6173787aa2cc/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://ce3c323d-b872-489b-8d3b-6173787aa2cc/schema/TekkenDB/table/user_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Guide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/update.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/greeting.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/updateGuide.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/ControllerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Repos/GuideRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/security.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.migration/V1__Init_DB.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://ce3c323d-b872-489b-8d3b-6173787aa2cc/schema/TekkenDB/table/guide">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ce3c323d-b872-489b-8d3b-6173787aa2cc/schema/TekkenDB/table/hibernate_sequence">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/guides.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/profile.ftlh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ce3c323d-b872-489b-8d3b-6173787aa2cc/schema/TekkenDB/table/characters">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.2.RELEASE/spring-boot-autoconfigure-2.3.2.RELEASE.jar!/org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="403" column="42" selection-start-line="403" selection-start-column="42" selection-end-line="403" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ce3c323d-b872-489b-8d3b-6173787aa2cc/schema/TekkenDB/table/flyway_schema_history">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/usersList.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Tier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+          <folding>
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="77" column="93" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.ftlh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_admin.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="64" selection-start-column="64" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="197" column="9" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-447">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="e#2107#2108#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="e#2209#2210#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ce3c323d-b872-489b-8d3b-6173787aa2cc/schema/TekkenDB/table/usr">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

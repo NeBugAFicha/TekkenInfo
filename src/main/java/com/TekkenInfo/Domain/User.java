@@ -13,10 +13,11 @@ import java.util.Set;
 
 @Entity
 @Table(name = "usr")
-public class User {
+public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     @NotBlank(message="Пожалуйста, введите имя пользователя")
     @Length(max=30, message = "Слишком длинное имя пользователя, максимальное число символов 30")
     private String username;
@@ -84,15 +85,29 @@ public class User {
         });
         this.guieds = guieds;
     }
-    public static UserDetails getUserDetailsUser(User user){
-        return  new org.springframework.security.core.userdetails.User(
-                user.getUsername(),
-                user.getPassword(),
-                user.getStatus().equals(Status.ACTIVE),
-                user.getStatus().equals(Status.ACTIVE),
-                user.getStatus().equals(Status.ACTIVE),
-                user.getStatus().equals(Status.ACTIVE),
-                user.getRole().getAuthorities()
-        );
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return role.getAuthorities();
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return status==Status.ACTIVE;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return status==Status.ACTIVE;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return status==Status.ACTIVE;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return status==Status.ACTIVE;
     }
 }
