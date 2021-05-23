@@ -4,6 +4,7 @@ import com.TekkenInfo.Domain.Char;
 import com.TekkenInfo.Domain.User;
 import com.TekkenInfo.Mapper.CharMapper;
 import com.TekkenInfo.Repos.UserRepo;
+import org.apache.logging.log4j.util.Chars;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Component
@@ -71,8 +73,15 @@ public class UserServiceImpl implements UserDetailsService, UserService{
         return null;
     }
 
-
-
+    @Override
+    public List<Char> filteredChars(String filter) {
+        List<Char> allcharsFiltered = findAll();
+        if(filter.equals("name")) allcharsFiltered = allcharsFiltered.stream().filter(x-> x.getName().equals(filter)).collect(Collectors.toList());
+        if(filter.equals("style")) allcharsFiltered = allcharsFiltered.stream().filter(x-> x.getFightingStyle().equals(filter)).collect(Collectors.toList());
+        if(filter.equals("tier")) allcharsFiltered = allcharsFiltered.stream().filter(x-> x.getTierLvl().toString().equals(filter)).collect(Collectors.toList());
+        if(filter.equals("author")) allcharsFiltered = allcharsFiltered.stream().filter(x-> x.getCharMakerName().equals(filter)).collect(Collectors.toList());
+        return allcharsFiltered;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

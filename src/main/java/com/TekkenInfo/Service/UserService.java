@@ -12,4 +12,5 @@ public interface UserService {
     void updateChar(Char character,String oldName);
     List<Char> sortChars(String critery);
     void updateCharMakerNameForChars(String oldName, String newName);
+    List<Char> filteredChars(String filter);
 }

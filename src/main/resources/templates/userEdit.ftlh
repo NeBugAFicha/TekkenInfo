@@ -5,7 +5,7 @@
         <input type="text" name="username" value="${user.username}">
         <#list roles as role>
             <div>
-                <input type="checkbox" name="role" value="${role}" />
+                <input type="checkbox" name="role" value="${role}" /> ${role}
             </div>
         </#list>
         <input type="hidden" value="${user.id}" name="userId">

@@ -43,7 +43,6 @@ public class UserController {
             @RequestParam("userId") User user
     ) {
         user.setUsername(username);
-
         user.setRole(role);
         userRepo.save(user);
 

@@ -25,6 +25,7 @@ import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static com.TekkenInfo.Controller.ControllerUtils.getErrors;
 
@@ -79,12 +80,7 @@ public class MainController {
      @GetMapping("/filter")
      public String filterChars(@RequestParam String searchByCritery, @RequestParam String filter, Model model){
         if(filter.equals("")) return "redirect:/main";
-        Iterable<Char> allchars = userService.findAll();
-        ArrayList<Char> allcharsFiltered = new ArrayList<Char>();
-        if(searchByCritery.equals("name")) for(Char character: allchars) if(character.getName().equals(filter)) allcharsFiltered.add(character);
-        if(searchByCritery.equals("style")) for(Char character: allchars) if(character.getFightingStyle().equals(filter)) allcharsFiltered.add(character);
-        if(searchByCritery.equals("tier")) for(Char character: allchars) if(character.getTierLvl().toString().equals(filter)) allcharsFiltered.add(character);
-        if(searchByCritery.equals("author")) for(Char character: allchars) if(character.getCharMakerName().equals(filter)) allcharsFiltered.add(character);
+        List<Char> allcharsFiltered = userService.filteredChars(filter);
         model.addAttribute("filter",filter);
         model.addAttribute("sortCriteries",sortCriteries);
         model.addAttribute("tierLvls",tierLvls);
@@ -106,7 +102,7 @@ public class MainController {
             Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
             model.mergeAttributes(errorsMap);
             model.addAttribute("char",character);
-            Iterable<Char> allChars = null;
+            List<Char> allChars = null;
             if(!UserServiceImpl.sortWish.equals("None")) {
                 allChars = userService.sortChars(UserServiceImpl.sortWish);
                 model.addAttribute("selectedSortCritery",UserServiceImpl.sortWish);
