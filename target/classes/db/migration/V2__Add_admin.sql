@@ -1,0 +1,1 @@
+insert into usr (id, password, role, status, username) values (0, '$2y$12$HaA/lJMA2i1ZjrWacwiZCua.1LUuMIndJsx3RH8CQ1fWbvkvPnzc6', 'ADMIN', 'ACTIVE', 'admin' );
