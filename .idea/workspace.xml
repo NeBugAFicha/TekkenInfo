@@ -4,32 +4,6 @@
     <list default="true" id="014cf507-6d15-4887-b3b1-8a5e42d03643" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SimpleSpringWebApp" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleSpringWebApp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/ControllerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/ControllerUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Char.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TekkenInfo/Service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/updateGuide.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/updateGuide.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/usersList.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/usersList.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/MvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/ControllerUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/ControllerUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/Char.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TekkenInfo/Service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/profile.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profile.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/updateGuide.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/updateGuide.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sweater/.idea/dataSources.xml" afterDir="false" />
@@ -512,7 +486,9 @@
       <workItem from="1619099694540" duration="2914000" />
       <workItem from="1619158418725" duration="5252000" />
       <workItem from="1619258926644" duration="2441000" />
-      <workItem from="1619510086193" duration="12206000" />
+      <workItem from="1619510086193" duration="13020000" />
+      <workItem from="1621746277444" duration="493000" />
+      <workItem from="1621746886175" duration="1850000" />
     </task>
     <servers />
   </component>
@@ -528,10 +504,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617512601778" />
-    <state x="725" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617094611021">
+    <state x="725" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621749180925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="725" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617094611021" />
+    <state x="725" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1621749180925" />
     <state x="599" y="212" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1617095206167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -556,38 +532,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1618912588701" />
-    <state width="1860" height="213" key="GridCell.Tab.0.bottom" timestamp="1619523542755">
+    <state width="1860" height="213" key="GridCell.Tab.0.bottom" timestamp="1619535439088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619523542755" />
-    <state width="1860" height="213" key="GridCell.Tab.0.center" timestamp="1619523542755">
+    <state width="1860" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619535439088" />
+    <state width="1860" height="213" key="GridCell.Tab.0.center" timestamp="1619535439087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619523542755" />
-    <state width="1860" height="213" key="GridCell.Tab.0.left" timestamp="1619523542754">
+    <state width="1860" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619535439087" />
+    <state width="1860" height="213" key="GridCell.Tab.0.left" timestamp="1619535439087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619523542754" />
-    <state width="1860" height="213" key="GridCell.Tab.0.right" timestamp="1619523542755">
+    <state width="1860" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619535439086" />
+    <state width="1860" height="213" key="GridCell.Tab.0.right" timestamp="1619535439087">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619523542755" />
-    <state width="1860" height="213" key="GridCell.Tab.1.bottom" timestamp="1619523542755">
+    <state width="1860" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619535439087" />
+    <state width="1860" height="213" key="GridCell.Tab.1.bottom" timestamp="1619535439088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="213" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619523542755" />
-    <state width="1860" height="213" key="GridCell.Tab.1.center" timestamp="1619523542755">
+    <state width="1860" height="213" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1619535439088" />
+    <state width="1860" height="213" key="GridCell.Tab.1.center" timestamp="1619535439088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="213" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619523542755" />
-    <state width="1860" height="213" key="GridCell.Tab.1.left" timestamp="1619523542755">
+    <state width="1860" height="213" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1619535439088" />
+    <state width="1860" height="213" key="GridCell.Tab.1.left" timestamp="1619535439088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="213" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619523542755" />
-    <state width="1860" height="213" key="GridCell.Tab.1.right" timestamp="1619523542755">
+    <state width="1860" height="213" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1619535439088" />
+    <state width="1860" height="213" key="GridCell.Tab.1.right" timestamp="1619535439088">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="213" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619523542755" />
+    <state width="1860" height="213" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1619535439088" />
     <state width="1860" height="343" key="GridCell.Tab.2.bottom" timestamp="1619251790502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -636,10 +612,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="676" y="166" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619523285384" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1619258961998">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1621746889077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619258961998" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621746889077" />
     <state x="731" y="252" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1618465611977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
